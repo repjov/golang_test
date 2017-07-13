@@ -1,4 +1,15 @@
 # GO Lang REST API Server Application
+This is my first test project using `Go` Language. The goals of this project :
+- Study basic knowledge of GO
+- Setup work environment using Docker
+- Work with Database and Permission
+- Build REST API:
+  - Registration
+  - Authorization
+  - Manage Users (Add/Update/Delete/Get)
+  - Some Data manipulations
+- Setup and figure out Testing
+
 ## Requirements
 - Docker
 - Git
