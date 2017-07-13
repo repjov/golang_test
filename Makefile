@@ -1,6 +1,5 @@
 SHELL = /bin/bash
 current_dir = $(shell pwd)
-appname = golangapp
 
 run:
 	./bin/up.sh

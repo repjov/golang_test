@@ -3,6 +3,9 @@
 - Docker
 - Git
 
+### Configs
+File `config` contains all main configs for application
+
 ## Commands
 Start container with docker
 ```bash
@@ -13,6 +16,28 @@ OR
 
 ```bash
 make run
+```
+
+Stop container with docker
+```bash
+./bin/halt.sh
+```
+
+OR
+
+```bash
+make stop
+```
+
+Install GO packages for work
+```bash
+./bin/installpkg.sh
+```
+
+OR
+
+```bash
+make installpkg
 ```
 
 
