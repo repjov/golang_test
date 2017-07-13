@@ -3,15 +3,10 @@ current_dir = $(shell pwd)
 appname = golangapp
 
 run:
-	docker run -dit --rm --name $(appname) \
-	 -p 3000:3000 \
-	 -v $(current_dir)/app:/go/src/app \
-	 -v $(current_dir)/build:/go/bin \
-	 golang /bin/bash #go install app/
-	 $(MAKE) install_dep
+	./bin/run.sh
 
 stop:
-	docker stop $(appname)
+	./bin/stop.sh
 
 install_dep:
 	docker exec -it $(appname) go get github.com/gorilla/mux
