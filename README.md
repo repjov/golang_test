@@ -1,3 +1,21 @@
+# GO Lang REST API Server Application
+## Requirements
+- Docker
+- Git
+
+## Commands
+Start container with docker
+```bash
+./bin/up.sh
+```
+
+OR
+
+```bash
+make run
+```
+
+
 My first test project on Golang.
 
 Files are located in `app` folder.

@@ -3,17 +3,13 @@ current_dir = $(shell pwd)
 appname = golangapp
 
 run:
-	./bin/run.sh
+	./bin/up.sh
 
 stop:
-	./bin/stop.sh
+	./bin/halt.sh
 
-install_dep:
-	docker exec -it $(appname) go get github.com/gorilla/mux
-	docker exec -it $(appname) go get -u github.com/jinzhu/gorm
+installpkg:
+	./bin/installpkg.sh
 
 buildapp:
-	docker exec -it $(appname) go install app
-
-execapp:
-	docker exec -it $(appname) /go/bin/app
+	./bin/build.sh
